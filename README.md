@@ -1,4 +1,4 @@
-# Enterprise Azure SOC Lab
+# Enterprise Azure SOC: Wazuh SIEM, SOAR & Incident Response Lab
 
 <p align="left">
   <img src="https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Microsoft Azure">
@@ -8,20 +8,32 @@
   <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell">
   <img src="https://img.shields.io/badge/MITRE_ATT%26CK-ED1C24?style=for-the-badge" alt="MITRE ATT&CK">
   <img src="https://img.shields.io/badge/SOAR-Shuffle-6C63FF?style=for-the-badge" alt="Shuffle SOAR">
-  <img src="https://img.shields.io/badge/Portfolio_Project-Verified-2E8B57?style=for-the-badge" alt="Portfolio Project">
 </p>
 
-> Azure-hosted enterprise security operations lab integrating Active Directory, Wazuh SIEM, endpoint telemetry, detection engineering, threat hunting, Python reporting, Shuffle SOAR, analyst approval, and response validation.
+> Built a three-system Azure SOC environment integrating Active Directory, Wazuh SIEM, endpoint telemetry, threat hunting, Python reporting, and Shuffle SOAR. The lab processed 482 alerts, correlated authentication attacks, enriched incidents with threat intelligence, enforced analyst approval, and validated response actions on the target endpoint.
 
 <p align="center">
   <img src="screenshots/08-architecture/01-enterprise-azure-soc-architecture.svg" alt="Enterprise Azure SOC architecture" width="95%">
 </p>
 
+## Key Results
+
+| Outcome | Evidence-backed result |
+|---|---|
+| Azure environment | 3 virtual machines: Windows Server 2025, Windows 11 Pro, and Ubuntu Server |
+| Monitoring coverage | 2 Windows Wazuh agents plus local Ubuntu/Wazuh telemetry |
+| Alert processing | 482 alerts exported: 0 Critical, 23 High, 260 Medium, and 199 Low |
+| Detection coverage | Authentication, process, SSH, FIM, vulnerability, and CIS monitoring |
+| Security findings | 7 vulnerabilities captured: 5 High and 2 Medium |
+| Python automation | 1 production-style alert-reporting utility plus 10 supporting lab utilities and prototypes |
+| SOAR workflow | 8-stage Shuffle workflow with VirusTotal, AbuseIPDB, Slack, email, and human approval |
+| Response validation | Safe Wazuh Active Response proof and component-level Windows Firewall validation |
+
 ## Overview
 
 This project models a small enterprise Security Operations Center in Microsoft Azure. It connects Windows and Linux infrastructure to a centralized workflow for log collection, detection, investigation, enrichment, approval, response, and validation.
 
-The repository separates controls that were fully validated from component-level response tests and experiments that exposed telemetry or automation gaps. This keeps the project evidence-based and avoids presenting successful commands as proof of successful security controls.
+The repository distinguishes fully validated controls from component-level tests, prototypes, and unresolved telemetry gaps. Successful commands and orchestration jobs are not treated as proof unless the resulting security state was independently verified.
 
 ## Skills Demonstrated
 
@@ -46,10 +58,10 @@ flowchart TD
     F --> G[Shuffle SOAR]
     G --> H[Analyst Approval]
     H --> I[Automated Response]
-    I --> J[Validation]
+    I --> J[Endpoint Validation]
 ```
 
-The workflow follows the same operating sequence used throughout the lab: build the environment, onboard telemetry, detect and investigate activity, enrich the incident, require analyst approval, execute a controlled response, and verify the result on the target system.
+The lab follows a defensive operations sequence: build the environment, onboard telemetry, detect and investigate activity, enrich the incident, require analyst approval, execute a controlled response, and verify the result on the affected system.
 
 ## Architecture
 
@@ -81,7 +93,7 @@ Implemented controls include password and lockout policies, departmental and pri
   <img src="screenshots/02-active-directory/password_and_account_lockout_policy_verified.png" alt="Password and account lockout policy verification" width="82%">
 </p>
 
-<p align="center"><em>Effective domain password and account-lockout settings verified from the Windows environment.</em></p>
+<p align="center"><em>Effective domain password and account-lockout settings verified from Windows.</em></p>
 
 ### SIEM and SOAR Integration
 
@@ -95,7 +107,7 @@ Windows and Linux telemetry is collected by Wazuh, processed through rules and d
 
 ### 1. Azure Infrastructure
 
-The lab uses three Azure virtual machines with static private addressing and internal DNS. Although the Azure NSG rules were configured correctly, I discovered that the Wazuh Dashboard and agents were still unreachable because Ubuntu UFW was blocking the required traffic. I opened the host-firewall ports and verified connectivity from Windows before continuing with the deployment.
+The lab uses three Azure virtual machines with static private addressing and internal DNS. Although the Azure NSG rules were configured correctly, the Wazuh Dashboard and agents remained unreachable because Ubuntu UFW blocked the required traffic. I opened the host-firewall ports and verified connectivity from Windows before continuing.
 
 ```bash
 sudo ufw allow 443/tcp
@@ -103,8 +115,6 @@ sudo ufw allow 1514/tcp
 sudo ufw allow 1515/tcp
 sudo ufw status verbose
 ```
-
-Connectivity was verified from Windows rather than assumed from the Azure configuration:
 
 ```powershell
 Test-NetConnection 10.0.0.6 -Port 1514
@@ -115,7 +125,7 @@ Test-NetConnection 10.0.0.6 -Port 1515
 
 `dc01` was promoted to a domain controller for `enterprise.local`. OUs, users, security groups, password controls, lockout controls, and Group Policy settings were configured before onboarding the Windows 11 endpoint.
 
-After pointing the endpoint to domain DNS, I joined it to `enterprise.local` and validated the result by authenticating with domain user accounts rather than relying only on the successful join message.
+After pointing the endpoint to domain DNS, I joined it to `enterprise.local` and validated the result by authenticating with domain user accounts.
 
 <p align="center">
   <img src="screenshots/03-windows-client/win11-successful-domain-join.png" alt="Windows 11 domain join validation" width="82%">
@@ -133,7 +143,7 @@ The Windows systems supplied Security events, Sysmon process telemetry, PowerShe
 
 <p align="center"><em>Centralized visibility for the Windows Server and Windows 11 agents.</em></p>
 
-### 4. Wazuh SIEM and Security Posture
+### 4. Security Monitoring and Posture
 
 #### File Integrity Monitoring
 
@@ -169,9 +179,9 @@ Controlled failed-authentication activity generated Windows Event ID `4625` and 
   <img src="screenshots/04-wazuh/wazuh_failed_logon_detection_dashboard.png" alt="Wazuh failed logon correlation dashboard" width="90%">
 </p>
 
-<p align="center"><em>Individual failed logons and correlated multiple-failure alerts shown together.</em></p>
+<p align="center"><em>Individual failed logons and the higher-severity correlated alert shown together.</em></p>
 
-To verify that correlation—not just repeated individual alerts—was occurring, I used a Python timeline to reconstruct the progression from the base events to the higher-severity correlated rule.
+A Python timeline reconstructed the progression from the base events to the correlated rule.
 
 <p align="center">
   <img src="screenshots/07-validation/incident_timeline_rule_correlation.png" alt="Incident timeline and Wazuh rule correlation" width="86%">
@@ -192,9 +202,9 @@ To verify that correlation—not just repeated individual alerts—was occurring
 
 ### Custom Rule Engineering
 
-I created and loaded custom PowerShell rule `100100`, but it did not trigger as expected. I initially compared indexed OpenSearch fields with Wazuh rule syntax; after enabling `logall_json` and inspecting `archives.json`, I traced the issue to the difference between indexed fields and the decoded fields used by the rule engine.
+I created and loaded custom PowerShell rule `100100`, but it did not trigger as expected. Enabling `logall_json` and inspecting `archives.json` exposed the difference between indexed OpenSearch fields and the decoded fields used by the Wazuh rule engine.
 
-Because the rule was not proven end to end during the recorded validation window, I document it as detection-engineering and telemetry-pipeline troubleshooting rather than as a successful production detection.
+Because the trigger was not proven end to end during the recorded validation window, it is documented as detection-engineering and telemetry-pipeline troubleshooting rather than a successful detection.
 
 ## Threat Hunting and Adversary Emulation
 
@@ -206,11 +216,11 @@ Sysmon Event ID `1` supplied process image, command line, parent process, user c
   <img src="screenshots/04-wazuh/wazuh_sysmon_process_detection_dashboard.png" alt="Wazuh Sysmon process detection dashboard" width="90%">
 </p>
 
-Windows Event ID `4672` was also collected as **Special privileges assigned to new logon**. It is treated as privileged-session telemetry, not automatic proof of malicious privilege escalation.
+Windows Event ID `4672` was collected as **Special privileges assigned to new logon**. It is treated as privileged-session telemetry, not automatic proof of malicious privilege escalation.
 
 ### Atomic Red Team Validation
 
-I installed Atomic Red Team on `win11` and executed PowerShell Command Execution test `T1059.001-17`, which completed with exit code `0`. I then used Wazuh Threat Hunting to inspect the resulting process image, command line, parent process, identifiers, hashes, and user context rather than treating the successful test alone as proof of SIEM visibility.
+I installed Atomic Red Team on `win11` and executed PowerShell Command Execution test `T1059.001-17`, which completed with exit code `0`. I then inspected the resulting process image, command line, parent process, identifiers, hashes, and user context in Wazuh Threat Hunting.
 
 <p align="center">
   <img src="screenshots/04-wazuh/wazuh_red_team_detection_event_details.png" alt="Atomic Red Team process telemetry in Wazuh" width="90%">
@@ -222,7 +232,7 @@ The event is not presented as automatically MITRE-mapped unless that mapping is 
 
 ## Python Automation
 
-The repository includes 11 Python utilities under [`python/`](python/). The primary data-driven tool is [`python/alert_report.py`](python/alert_report.py), which:
+The primary data-driven utility is [`python/alert_report.py`](python/alert_report.py). It:
 
 - Reads Wazuh `/var/ossec/logs/alerts/alerts.json`
 - Handles missing files, permission failures, and malformed JSON lines
@@ -246,7 +256,7 @@ python3 alert_report.py \
 
 The committed sample report processed **482 alerts**: 0 Critical, 23 High, 260 Medium, and 199 Low.
 
-### Supporting Utilities
+### Supporting Utilities and Prototypes
 
 | Script | Purpose | Current maturity |
 |---|---|---|
@@ -270,7 +280,7 @@ The Python threat-intelligence prototypes are separate from the working VirusTot
   <img src="screenshots/08-architecture/06-shuffle-soar-incident-response-workflow.svg" alt="Shuffle SOAR workflow" width="72%">
 </p>
 
-I built the `Enterprise Wazuh SOC Response` workflow to receive structured incident JSON through the `Wazuh Alert Ingestion` webhook. I designed the case schema to carry severity, priority, endpoint, target account, failed-logon count, source IP, assigned queue, SLA, assessment, and analyst actions so downstream steps had consistent investigation context.
+The `Enterprise Wazuh SOC Response` workflow receives structured incident JSON through the `Wazuh Alert Ingestion` webhook. The case schema carries severity, priority, endpoint, target account, failed-logon count, source IP, assigned queue, SLA, assessment, and analyst actions.
 
 The workflow implemented:
 
@@ -289,7 +299,7 @@ The workflow implemented:
   <img src="screenshots/05-shuffle/shuffle_threat_intelligence_enrichment.png" alt="Shuffle threat intelligence enrichment" width="91%">
 </p>
 
-<p align="center"><em>VirusTotal and AbuseIPDB actions executed as part of incident enrichment.</em></p>
+<p align="center"><em>VirusTotal and AbuseIPDB actions executed during incident enrichment.</em></p>
 
 ### P1 Notification
 
@@ -305,15 +315,15 @@ The Slack alert included the case ID, incident ID, severity, priority, endpoint,
   <img src="screenshots/05-shuffle/shuffle_human_approval_workflow.png" alt="Shuffle human approval workflow" width="92%">
 </p>
 
-<p align="center"><em>The workflow paused at a WAITING state before a potentially destructive response.</em></p>
+<p align="center"><em>The workflow paused in a WAITING state before a potentially destructive response.</em></p>
 
-I deliberately placed the approval gate before containment so successful enrichment or notification could not be mistaken for authorization to block an endpoint or disable an account.
+The approval gate prevents enrichment or notification success from automatically authorizing endpoint containment or account disablement.
 
-## Automated Response
+## Automated Response and Validation
 
 ### Wazuh Active Response
 
-Rather than begin with a destructive action, I attached a safe server-side Wazuh Active Response command to rule `60204`. The script wrote timestamped `SAFE_ACTIVE_RESPONSE_TRIGGERED` entries to `active-responses.log`, allowing me to prove the rule-triggered execution path before testing containment.
+A safe server-side Wazuh Active Response command was attached to rule `60204`. The script wrote timestamped `SAFE_ACTIVE_RESPONSE_TRIGGERED` entries to `active-responses.log`, proving the rule-triggered execution path before containment testing.
 
 <p align="center">
   <img src="screenshots/04-wazuh/wazuh_active_response_execution_log.png" alt="Wazuh Active Response execution log" width="86%">
@@ -323,21 +333,21 @@ Rather than begin with a destructive action, I attached a safe server-side Wazuh
 
 ### Azure Automation
 
-I used Azure Automation, a Hybrid Runbook Worker, and PowerShell runbooks to test endpoint-side response execution. Earlier attempts showed why a successful job message was not enough: some jobs ran in the wrong context or encountered managed-identity and RBAC limitations, so I separated orchestration status from endpoint-side proof.
+Azure Automation, a Hybrid Runbook Worker, and PowerShell runbooks were used to test endpoint-side response execution. Managed-identity, RBAC, execution-context, and worker-placement limitations were isolated during testing.
 
 <p align="center">
   <img src="screenshots/07-validation/azure_hybrid_worker_job_completed.png" alt="Azure Hybrid Worker job completed" width="86%">
 </p>
 
-## Validation
+### Endpoint-Side Validation
 
-For final validation, I checked the target system instead of relying only on orchestration status. I verified that the Windows Firewall rule was enabled, configured to block inbound traffic, and scoped to the intended remote address.
+The final Windows Firewall state was checked directly on the target system. The rule was enabled, configured to block inbound traffic, and scoped to the intended remote address.
 
 <p align="center">
   <img src="screenshots/07-validation/windows_firewall_rule_ip_block_verified.png" alt="Windows Firewall IP block verification" width="86%">
 </p>
 
-I present this as **component-level response validation** because the repository does not prove that one uninterrupted incident traversed every stage from attack generation to final containment. Keeping that distinction prevents a successful component test from being overstated as a fully automated end-to-end response.
+This is presented as **component-level response validation** because the repository does not prove that one uninterrupted incident traversed every stage from attack generation to final containment.
 
 ### Validation Matrix
 
@@ -364,16 +374,14 @@ I present this as **component-level response validation** because the repository
 
 ## Troubleshooting Highlights
 
-The most valuable parts of the build were the failures that required isolating the problem across cloud networking, endpoint configuration, Wazuh processing, SOAR connectors, and response execution.
-
 | Problem encountered | Root cause and resolution | What it demonstrated |
 |---|---|---|
-| Wazuh Dashboard and agents were unreachable even though Azure rules looked correct | Azure NSGs allowed the traffic, but Ubuntu UFW still blocked TCP `443`, `1514`, and `1515`. I opened the host-firewall ports and verified them with `Test-NetConnection`. | Cloud controls and host controls must be tested independently. |
-| The Windows agent reported a duplicate Security EventChannel warning | The agent configuration contained duplicate `<localfile>` entries. I removed the duplicate and restarted the Wazuh agent service. | Collection health depends on clean endpoint configuration, not only agent status. |
-| Custom rule `100100` loaded but did not trigger as expected | I initially compared OpenSearch fields such as `data.win.eventdata.image` with Wazuh rule syntax. Enabling `logall_json` and inspecting `archives.json` showed that the rule engine required decoded fields such as `win.eventdata.image`. | Indexed dashboard fields and decoder fields are different stages of the pipeline. |
-| Built-in Shuffle actions failed or requested unsuitable permissions | I replaced unreliable connector steps with direct HTTP actions and webhooks, then validated the returned execution data. | SOAR workflows should degrade gracefully when connectors are limited. |
-| Azure Automation reported success without proving an endpoint change | The runbook execution context, managed identity, RBAC permissions, and Hybrid Worker placement had to be separated and tested. I validated the final firewall state from Windows rather than trusting job status alone. | Orchestration success is not the same as control effectiveness. |
-| Defender detected EICAR locally, but no matching Wazuh event was confirmed | The local antivirus control worked, but the required Defender telemetry path was not proven in Wazuh. The result was documented as a visibility gap instead of a successful SIEM detection. | Honest validation includes recording what the monitoring pipeline did not capture. |
+| Wazuh Dashboard and agents were unreachable despite correct Azure rules | Ubuntu UFW still blocked TCP `443`, `1514`, and `1515`. I opened the ports and verified them with `Test-NetConnection`. | Cloud and host controls must be tested independently. |
+| The Windows agent reported a duplicate Security EventChannel warning | Duplicate `<localfile>` entries were removed before restarting the agent service. | Collection health depends on clean endpoint configuration. |
+| Custom rule `100100` loaded but did not trigger | `archives.json` showed that the rule engine required decoded fields such as `win.eventdata.image`, not indexed dashboard fields such as `data.win.eventdata.image`. | Indexed fields and decoder fields belong to different pipeline stages. |
+| Built-in Shuffle actions failed or requested unsuitable permissions | Unreliable connector steps were replaced with direct HTTP actions and webhooks, then validated through returned execution data. | SOAR workflows should degrade gracefully when connectors are limited. |
+| Azure Automation reported success without proving an endpoint change | Execution context, managed identity, RBAC, and Hybrid Worker placement were tested separately; the firewall state was then checked from Windows. | Orchestration status alone does not prove control effectiveness. |
+| Defender detected EICAR locally, but no matching Wazuh event was confirmed | The local control worked, but the Defender-to-Wazuh telemetry path was not proven. | Visibility gaps must be documented rather than overstated. |
 
 ## Prerequisites
 
@@ -386,7 +394,7 @@ The most valuable parts of the build were the failures that required isolating t
 - Optional VirusTotal, AbuseIPDB, Slack, and email credentials
 - Atomic Red Team for controlled adversary emulation
 
-Never commit live API keys, webhook URLs, passwords, certificates, or private keys.
+> Never commit live API keys, webhook URLs, passwords, certificates, or private keys.
 
 ## Repository Structure
 
@@ -412,12 +420,12 @@ enterprise-azure-soc-lab/
 
 ## Lessons Learned
 
-1. **Validate every layer.** This build reinforced that Azure networking, host firewalls, services, agents, event channels, rules, and dashboards can fail independently.
-2. **Verify the target state.** I learned not to treat a successful action or runbook as proof that the intended security control changed.
-3. **Use safe proof-of-execution first.** I validated the Active Response trigger path with non-destructive logging before moving to containment testing.
-4. **Separate telemetry from alerting.** I encountered events that existed locally but were not yet collected, decoded, matched, or promoted into alerts.
-5. **Keep a human approval gate.** I placed potentially destructive response actions behind analyst review rather than allowing enrichment success to trigger containment automatically.
-6. **Document gaps honestly.** Failed tests and visibility gaps strengthened the project when the final claims matched the available evidence.
+1. **Validate each layer independently.** Azure networking, host firewalls, services, agents, event channels, rules, and dashboards can fail separately.
+2. **Verify the target state.** A successful action or orchestration job is not proof that the intended security control changed.
+3. **Use safe proof-of-execution first.** Non-destructive logging validated the Active Response path before containment testing.
+4. **Separate telemetry from alerting.** An event may exist locally without being collected, decoded, matched, or promoted into an alert.
+5. **Require human approval for destructive actions.** Potential containment remained behind analyst review.
+6. **Document gaps honestly.** Unsuccessful tests and visibility gaps strengthen the project when claims match the evidence.
 
 ## Future Improvements
 
@@ -433,20 +441,6 @@ enterprise-azure-soc-lab/
 ## Security and Ethics
 
 All attack activity was performed in a controlled lab environment for defensive security validation. This project does not authorize testing systems that are not owned or explicitly approved for assessment.
-
-## Project Results
-
-| Metric | Evidence-backed result |
-|---|---|
-| Azure infrastructure | 3 virtual machines across Windows Server, Windows 11, and Ubuntu |
-| Monitored systems | 2 Windows Wazuh agents plus local Ubuntu/Wazuh telemetry |
-| Alert processing | 482 alerts exported: 0 Critical, 23 High, 260 Medium, 199 Low |
-| Python automation | 11 scripts; primary alert parser exports TXT, JSON, and CSV |
-| Detection and posture coverage | 8 documented categories spanning authentication, process, SSH, FIM, vulnerability, and CIS monitoring |
-| Vulnerability validation | 7 findings visible in the captured inventory: 5 High and 2 Medium |
-| SOAR workflow | 1 structured Shuffle incident workflow with 8 documented stages |
-| Enrichment and notification | VirusTotal, AbuseIPDB, Slack, and email integrated into the workflow |
-| Approval and response | Human approval gate, safe Wazuh Active Response proof, and component-level Azure/Windows Firewall validation |
 
 ---
 
