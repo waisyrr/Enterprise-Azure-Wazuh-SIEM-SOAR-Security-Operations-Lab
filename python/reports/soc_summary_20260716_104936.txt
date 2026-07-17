@@ -1,0 +1,15 @@
+============================================================
+SOC SUMMARY REPORT
+============================================================
+
+Timestamp: 2026-07-16 10:49:36.212931+00:00
+
+SOC SUMMARY
+===========
+Total Alerts: 482
+Critical Alerts: 0
+High Alerts: 23
+Medium Alerts: 260
+Low Alerts: 199
+
+Overall Status: Healthy

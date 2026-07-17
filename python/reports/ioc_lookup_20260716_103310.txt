@@ -1,0 +1,11 @@
+============================================================
+IOC LOOKUP REPORT
+============================================================
+
+Timestamp: 2026-07-16 10:33:10.511149+00:00
+
+IOC Lookup Results
+==================
+8.8.8.8 -> No threat intelligence lookup configured
+1.1.1.1 -> No threat intelligence lookup configured
+192.168.1.100 -> No threat intelligence lookup configured

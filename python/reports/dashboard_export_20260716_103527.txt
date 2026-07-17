@@ -1,0 +1,14 @@
+============================================================
+DASHBOARD EXPORT REPORT
+============================================================
+
+Timestamp: 2026-07-16 10:35:27.396966+00:00
+
+Dashboard Export
+================
+Critical Alerts Dashboard
+Authentication Dashboard
+MITRE ATT&CK Dashboard
+Vulnerability Dashboard
+Compliance Dashboard
+Agent Status Dashboard

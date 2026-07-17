@@ -1,0 +1,64 @@
+======================================================================
+ENTERPRISE AZURE SOC - WAZUH ALERT REPORT
+======================================================================
+
+Generated UTC:    2026-07-16T10:03:09.595620+00:00
+Source file:      /var/ossec/logs/alerts/alerts.json
+Alerts processed: 482
+Malformed lines:  0
+
+SEVERITY SUMMARY
+----------------------------------------------------------------------
+Critical: 0
+High:     23
+Medium:   260
+Low:      199
+
+TOP ALERT RULES
+----------------------------------------------------------------------
+  160  60122 - Logon Failure - Unknown user or bad password
+  125  67027 - A process was created.
+   84  60104 - Windows audit failure event
+   18  60204 - Multiple Windows Logon Failures
+   11  60642 - Software protection service scheduled successfully.
+    9  92021 - Powershell was used to delete files or directories
+    9  92066 - C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe
+    8  5502 - PAM: Login session closed.
+    5  92031 - Discovery activity executed
+    4  92032 - Suspicious Windows cmd shell execution
+
+ALERTS BY ENDPOINT
+----------------------------------------------------------------------
+  234  dc01
+  215  win11
+   33  wazuh01
+
+TOP SOURCE IP ADDRESSES
+----------------------------------------------------------------------
+   36  91.238.181.94
+   32  88.214.25.125
+   32  194.165.16.166
+   24  88.214.25.121
+   23  194.165.16.167
+   16  45.227.254.152
+    7  45.227.254.155
+    3  89.18.136.94
+    3  194.165.16.162
+    1  51.77.190.75
+
+MITRE ATT&CK TECHNIQUES
+----------------------------------------------------------------------
+  160  T1531
+   18  T1110
+    9  T1070.004
+    9  T1059.001
+    9  T1087
+    8  T1059.003
+    5  T1078
+    4  T1548.003
+    1  T1562.001
+    1  T1574.001
+
+======================================================================
+END OF REPORT
+======================================================================

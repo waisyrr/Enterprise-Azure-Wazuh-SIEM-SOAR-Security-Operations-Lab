@@ -1,0 +1,483 @@
+timestamp,rule_id,rule_level,severity,description,agent_name,agent_id,source_ip,username,mitre_ids,location
+2026-07-16T06:03:35.829+0000,503,3,Low,Wazuh agent started.,win11,002,Unknown,Unknown,None,wazuh-agent
+2026-07-16T06:03:35.835+0000,92021,3,Low,Powershell was used to delete files or directories,win11,002,Unknown,Unknown,T1070.004,EventChannel
+2026-07-16T06:03:36.159+0000,92066,4,Medium,C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe,win11,002,Unknown,Unknown,T1059.001,EventChannel
+2026-07-16T06:03:36.187+0000,92021,3,Low,Powershell was used to delete files or directories,win11,002,Unknown,Unknown,T1070.004,EventChannel
+2026-07-16T06:03:36.207+0000,92066,4,Medium,C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe,win11,002,Unknown,Unknown,T1059.001,EventChannel
+2026-07-16T06:03:36.216+0000,80730,3,Low,Auditd: SELinux permission check.,wazuh01,000,Unknown,Unknown,None,/var/log/audit/audit.log
+2026-07-16T06:03:36.218+0000,92021,3,Low,Powershell was used to delete files or directories,win11,002,Unknown,Unknown,T1070.004,EventChannel
+2026-07-16T06:03:36.240+0000,503,3,Low,Wazuh agent started.,dc01,001,Unknown,Unknown,None,wazuh-agent
+2026-07-16T06:03:36.234+0000,92066,4,Medium,C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe,win11,002,Unknown,Unknown,T1059.001,EventChannel
+2026-07-16T06:03:36.244+0000,92021,3,Low,Powershell was used to delete files or directories,win11,002,Unknown,Unknown,T1070.004,EventChannel
+2026-07-16T06:03:36.247+0000,92066,4,Medium,C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe,win11,002,Unknown,Unknown,T1059.001,EventChannel
+2026-07-16T06:03:36.248+0000,92052,4,Medium,Windows command prompt started by an abnormal process,win11,002,Unknown,Unknown,T1059.003,EventChannel
+2026-07-16T06:03:36.250+0000,92032,3,Low,Suspicious Windows cmd shell execution,win11,002,Unknown,Unknown,"T1087, T1059.003",EventChannel
+2026-07-16T06:03:36.251+0000,92032,3,Low,Suspicious Windows cmd shell execution,win11,002,Unknown,Unknown,"T1087, T1059.003",EventChannel
+2026-07-16T06:03:36.253+0000,92032,3,Low,Suspicious Windows cmd shell execution,win11,002,Unknown,Unknown,"T1087, T1059.003",EventChannel
+2026-07-16T06:03:36.255+0000,92032,3,Low,Suspicious Windows cmd shell execution,win11,002,Unknown,Unknown,"T1087, T1059.003",EventChannel
+2026-07-16T06:03:36.261+0000,92021,3,Low,Powershell was used to delete files or directories,win11,002,Unknown,Unknown,T1070.004,EventChannel
+2026-07-16T06:03:36.265+0000,92066,4,Medium,C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe,win11,002,Unknown,Unknown,T1059.001,EventChannel
+2026-07-16T06:03:36.267+0000,92021,3,Low,Powershell was used to delete files or directories,win11,002,Unknown,Unknown,T1070.004,EventChannel
+2026-07-16T06:03:36.270+0000,92066,4,Medium,C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe,win11,002,Unknown,Unknown,T1059.001,EventChannel
+2026-07-16T06:03:36.274+0000,92021,3,Low,Powershell was used to delete files or directories,win11,002,Unknown,Unknown,T1070.004,EventChannel
+2026-07-16T06:03:36.277+0000,92021,3,Low,Powershell was used to delete files or directories,win11,002,Unknown,Unknown,T1070.004,EventChannel
+2026-07-16T06:03:36.281+0000,92066,4,Medium,C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe,win11,002,Unknown,Unknown,T1059.001,EventChannel
+2026-07-16T06:03:36.283+0000,92066,4,Medium,C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe,win11,002,Unknown,Unknown,T1059.001,EventChannel
+2026-07-16T06:03:36.287+0000,92066,4,Medium,C:\\Windows\\SysWOW64\\SecEdit.exe binary in a suspicious location launched by C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe,win11,002,Unknown,Unknown,T1059.001,EventChannel
+2026-07-16T06:03:36.302+0000,92031,3,Low,Discovery activity executed,win11,002,Unknown,Unknown,T1087,EventChannel
+2026-07-16T06:03:36.304+0000,92031,3,Low,Discovery activity executed,win11,002,Unknown,Unknown,T1087,EventChannel
+2026-07-16T06:03:36.307+0000,92031,3,Low,Discovery activity executed,win11,002,Unknown,Unknown,T1087,EventChannel
+2026-07-16T06:03:36.309+0000,92031,3,Low,Discovery activity executed,win11,002,Unknown,Unknown,T1087,EventChannel
+2026-07-16T06:03:36.322+0000,92021,3,Low,Powershell was used to delete files or directories,win11,002,Unknown,Unknown,T1070.004,EventChannel
+2026-07-16T06:03:36.621+0000,60805,3,Low,The database engine is starting a new instance.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.631+0000,60798,3,Low,The database engine attached a database.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.635+0000,92052,4,Medium,Windows command prompt started by an abnormal process,win11,002,Unknown,Unknown,T1059.003,EventChannel
+2026-07-16T06:03:36.652+0000,60602,9,High,Windows application error event.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.663+0000,60642,3,Low,Software protection service scheduled successfully.,win11,002,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.664+0000,60602,9,High,Windows application error event.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.667+0000,60602,9,High,Windows application error event.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.671+0000,60602,9,High,Windows application error event.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.671+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.671+0000,60646,5,Medium,License activation (slui.exe) failed.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.674+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.711+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.733+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.783+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.876+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.926+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:36.997+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:37.022+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:37.254+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,89.18.136.94,MANAGER,T1531,EventChannel
+2026-07-16T06:03:37.302+0000,60106,3,Low,Windows Logon Success,win11,002,Unknown,WIN11$,T1078,EventChannel
+2026-07-16T06:03:37.318+0000,60137,3,Low,Windows User Logoff,win11,002,Unknown,WIN11$,None,EventChannel
+2026-07-16T06:03:37.525+0000,60104,5,Medium,Windows audit failure event,win11,002,Unknown,Unknown,None,EventChannel
+2026-07-16T06:03:37.651+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:37.667+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:37.714+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:37.734+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:37.778+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:37.828+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.018+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.032+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,91.238.181.94,Administrator,T1110,EventChannel
+2026-07-16T06:03:38.047+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.063+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.078+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.094+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.110+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.192+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.206+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.221+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.237+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.254+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.270+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.284+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.301+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.317+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,91.238.181.94,Administrator,T1110,EventChannel
+2026-07-16T06:03:38.342+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.349+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.364+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.380+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.398+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,88.214.25.125,Administrator,T1110,EventChannel
+2026-07-16T06:03:38.415+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.430+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.445+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.465+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.477+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.493+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,91.238.181.94,Administrator,T1110,EventChannel
+2026-07-16T06:03:38.511+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.527+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.538+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.556+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.570+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.586+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.602+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.617+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.635+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.651+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.665+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.681+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.697+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.712+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.728+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,91.238.181.94,Administrator,T1110,EventChannel
+2026-07-16T06:03:38.760+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.762+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.777+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.791+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.807+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.824+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.839+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.854+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.870+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.889+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,91.238.181.94,Administrator,T1531,EventChannel
+2026-07-16T06:03:38.903+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,88.214.25.121,Administrator,T1110,EventChannel
+2026-07-16T07:18:41.191+0000,506,3,Low,Wazuh agent stopped.,dc01,001,Unknown,Unknown,T1562.001,wazuh-remoted
+2026-07-16T07:18:41.191+0000,657,3,Low,Active response: restart-wazuh.exe - add,win11,002,Unknown,Unknown,None,active-response\active-responses.log
+2026-07-16T07:18:41.231+0000,92052,4,Medium,Windows command prompt started by an abnormal process,win11,002,Unknown,Unknown,T1059.003,EventChannel
+2026-07-16T07:18:41.232+0000,92036,3,Low,A C:\\Windows\\SysWOW64\\net.exe binary was started by a Windows cmd shell,win11,002,Unknown,Unknown,"T1059.003, T1574.001",EventChannel
+2026-07-16T07:18:41.241+0000,92031,3,Low,Discovery activity executed,win11,002,Unknown,Unknown,T1087,EventChannel
+2026-07-16T07:18:41.896+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:41.897+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.155,Administrator,T1531,EventChannel
+2026-07-16T07:18:41.911+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,51.77.190.75,ADMINISTRATOR,T1531,EventChannel
+2026-07-16T07:18:41.931+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:41.941+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.155,Administrator,T1531,EventChannel
+2026-07-16T07:18:41.957+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:41.976+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:41.988+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.155,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.004+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.021+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.037+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.155,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.052+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.066+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.086+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.155,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.100+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.113+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.135+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.155,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.145+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.160+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.177+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.155,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.192+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,194.165.16.167,Administrator,T1110,EventChannel
+2026-07-16T07:18:42.214+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.224+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.240+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.257+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:42.272+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,194.165.16.166,Administrator,T1110,EventChannel
+2026-07-16T07:18:42.950+0000,80730,3,Low,Auditd: SELinux permission check.,wazuh01,000,Unknown,Unknown,None,/var/log/audit/audit.log
+2026-07-16T07:18:43.796+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:43.797+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:44.829+0000,5501,3,Low,PAM: Login session opened.,wazuh01,000,Unknown,root,T1078,/var/log/auth.log
+2026-07-16T07:18:44.829+0000,5502,3,Low,PAM: Login session closed.,wazuh01,000,Unknown,root,None,/var/log/auth.log
+2026-07-16T07:18:44.829+0000,5502,3,Low,PAM: Login session closed.,wazuh01,000,Unknown,root,None,/var/log/auth.log
+2026-07-16T07:18:44.829+0000,5402,3,Low,Successful sudo to ROOT executed.,wazuh01,000,Unknown,root,T1548.003,/var/log/auth.log
+2026-07-16T07:18:44.832+0000,5402,3,Low,Successful sudo to ROOT executed.,wazuh01,000,Unknown,root,T1548.003,journald
+2026-07-16T07:18:44.832+0000,5501,3,Low,PAM: Login session opened.,wazuh01,000,Unknown,root,T1078,journald
+2026-07-16T07:18:44.832+0000,5502,3,Low,PAM: Login session closed.,wazuh01,000,Unknown,root,None,journald
+2026-07-16T07:18:44.832+0000,5502,3,Low,PAM: Login session closed.,wazuh01,000,Unknown,root,None,journald
+2026-07-16T07:18:45.430+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:45.432+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:47.181+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:47.183+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:48.912+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:48.915+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:49.767+0000,502,3,Low,Wazuh server started.,wazuh01,000,Unknown,Unknown,None,wazuh-monitord
+2026-07-16T07:18:49.870+0000,503,3,Low,Wazuh agent started.,dc01,001,Unknown,Unknown,None,wazuh-agent
+2026-07-16T07:18:50.235+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:50.257+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.288+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.304+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.307+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.320+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.336+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.352+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.368+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.383+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.399+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:50.431+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.447+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.495+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.510+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.529+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.542+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.544+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.574+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.589+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.592+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.605+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:18:50.606+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:50.606+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:50.636+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.652+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.668+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.700+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.702+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.716+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.732+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:50.750+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.764+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.779+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.781+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:50.797+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.811+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.828+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.871+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.875+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.891+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.917+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.916+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.923+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.953+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:50.969+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:50.985+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.000+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.018+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.033+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.050+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.064+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.079+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.095+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.098+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.112+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.127+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.143+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.145+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.159+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.190+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.206+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:51.221+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.223+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.237+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.253+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.269+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.284+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.301+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.316+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.332+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.348+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.350+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.363+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.365+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.379+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.381+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.395+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.411+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.413+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.427+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.444+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.445+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:51.459+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.475+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.478+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.491+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.506+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.523+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.524+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.541+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.541+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.553+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.569+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.585+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.600+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.604+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.616+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.632+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.648+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.663+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.680+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.695+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.710+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.726+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.742+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.758+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.774+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.792+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.793+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.805+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.820+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.836+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.838+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.853+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.868+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.871+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.883+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.899+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.915+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.922+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.931+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.946+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.963+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.977+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:51.995+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.009+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.025+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.041+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.056+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.072+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.088+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.103+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.120+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.135+0000,67027,3,Low,A process was created.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:52.153+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:52.241+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:52.241+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:52.832+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:52.834+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:53.921+0000,60642,3,Low,Software protection service scheduled successfully.,dc01,001,Unknown,Unknown,None,EventChannel
+2026-07-16T07:18:54.223+0000,19010,3,Low,CIS Microsoft Windows Server 2025 Benchmark: Ensure 'Enforce password history' is set to '24 or more password(s)'.: Status changed from failed to passed,dc01,001,Unknown,Unknown,None,sca
+2026-07-16T07:18:54.237+0000,19010,3,Low,"CIS Microsoft Windows Server 2025 Benchmark: Ensure 'Maximum password age' is set to '365 or fewer days, but not 0'.: Status changed from failed to passed",dc01,001,Unknown,Unknown,None,sca
+2026-07-16T07:18:54.253+0000,19010,3,Low,CIS Microsoft Windows Server 2025 Benchmark: Ensure 'Minimum password age' is set to '1 or more day(s)'.: Status changed from failed to passed,dc01,001,Unknown,Unknown,None,sca
+2026-07-16T07:18:54.265+0000,19010,3,Low,CIS Microsoft Windows Server 2025 Benchmark: Ensure 'Minimum password length' is set to '14 or more character(s)'.: Status changed from failed to passed,dc01,001,Unknown,Unknown,None,sca
+2026-07-16T07:18:54.507+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:54.522+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:56.144+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,194.165.16.166,Administrator,T1110,EventChannel
+2026-07-16T07:18:56.500+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:56.834+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.856+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd GSSAPIAuthentication is disabled.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.865+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd HostbasedAuthentication is disabled.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.875+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd IgnoreRhosts is enabled.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.905+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd LogLevel is configured.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.916+0000,19011,9,High,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd MACs are configured.: Status changed from passed to failed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.936+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd MaxSessions is configured.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.956+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd PermitEmptyPasswords is disabled.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.966+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd PermitRootLogin is disabled.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.977+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd PermitUserEnvironment is disabled.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:56.987+0000,19010,3,Low,CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Ensure sshd UsePAM is enabled.: Status changed from failed to passed,wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:18:57.959+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:18:58.867+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:18:59.657+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:01.229+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:01.349+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:02.476+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:03.041+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:03.054+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:04.677+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:04.679+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:05.226+0000,19004,7,Medium,SCA summary: CIS Ubuntu Linux 24.04 LTS Benchmark v1.0.0.: Score less than 50% (49),wazuh01,000,Unknown,Unknown,None,sca
+2026-07-16T07:19:06.334+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:06.352+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:07.578+0000,19004,7,Medium,SCA summary: CIS Microsoft Windows Server 2025 Benchmark: Score less than 50% (31),dc01,001,Unknown,Unknown,None,sca
+2026-07-16T07:19:08.317+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:08.322+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:10.022+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,194.165.16.166,Administrator,T1110,EventChannel
+2026-07-16T07:19:10.023+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:10.023+0000,61102,5,Medium,Windows System error event,win11,002,Unknown,Unknown,None,EventChannel
+2026-07-16T07:19:10.035+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,194.165.16.167,Administrator,T1110,EventChannel
+2026-07-16T07:19:10.065+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:11.693+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:11.695+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:12.944+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:19:12.945+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:12.973+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:12.973+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:14.054+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,MANAGER,None,EventChannel
+2026-07-16T07:19:14.072+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,89.18.136.94,MANAGER,T1531,EventChannel
+2026-07-16T07:19:14.072+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:19:14.096+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:15.375+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:15.384+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:16.625+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:19:16.626+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:16.658+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:16.674+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:18.272+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:19:18.276+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:18.277+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:18.279+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:19.966+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:19:19.967+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:19.972+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:19.984+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:21.610+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:21.619+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:19:21.620+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.166,Administrator,T1531,EventChannel
+2026-07-16T07:19:21.624+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:19:23.263+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.167,Administrator,T1531,EventChannel
+2026-07-16T07:19:23.264+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,194.165.16.166,Administrator,T1110,EventChannel
+2026-07-16T07:29:07.197+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.200+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.162,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.216+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.231+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.232+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.233+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.162,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.232+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.216+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.242+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.238+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.270+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,194.165.16.162,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.258+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.277+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.277+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.285+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.285+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.298+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.299+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.314+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.313+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.319+0000,80730,3,Low,Auditd: SELinux permission check.,wazuh01,000,Unknown,Unknown,None,/var/log/audit/audit.log
+2026-07-16T07:29:07.330+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.331+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.346+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.346+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.361+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.363+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.377+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.378+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.393+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.394+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.409+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.410+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.424+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.426+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.441+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.443+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.456+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.458+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:07.472+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.474+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,dc01,001,62.171.169.75,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.488+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.504+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:07.523+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,45.227.254.152,Administrator,T1110,EventChannel
+2026-07-16T07:29:08.064+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:08.080+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,88.214.25.125,Administrator,T1110,EventChannel
+2026-07-16T07:29:08.099+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:08.101+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:09.190+0000,5502,3,Low,PAM: Login session closed.,wazuh01,000,Unknown,root,None,/var/log/auth.log
+2026-07-16T07:29:09.191+0000,5402,3,Low,Successful sudo to ROOT executed.,wazuh01,000,Unknown,root,T1548.003,/var/log/auth.log
+2026-07-16T07:29:09.191+0000,5501,3,Low,PAM: Login session opened.,wazuh01,000,Unknown,root,T1078,/var/log/auth.log
+2026-07-16T07:29:09.191+0000,5502,3,Low,PAM: Login session closed.,wazuh01,000,Unknown,root,None,/var/log/auth.log
+2026-07-16T07:29:09.219+0000,5502,3,Low,PAM: Login session closed.,wazuh01,000,Unknown,root,None,journald
+2026-07-16T07:29:09.219+0000,5402,3,Low,Successful sudo to ROOT executed.,wazuh01,000,Unknown,root,T1548.003,journald
+2026-07-16T07:29:09.219+0000,5501,3,Low,PAM: Login session opened.,wazuh01,000,Unknown,root,T1078,journald
+2026-07-16T07:29:09.219+0000,5502,3,Low,PAM: Login session closed.,wazuh01,000,Unknown,root,None,journald
+2026-07-16T07:29:09.630+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:09.632+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:09.644+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:09.646+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:09.648+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:10.861+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,89.18.136.94,USER,T1531,EventChannel
+2026-07-16T07:29:10.862+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,88.214.25.121,Administrator,T1110,EventChannel
+2026-07-16T07:29:10.875+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:10.919+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,USER,None,EventChannel
+2026-07-16T07:29:10.962+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:10.962+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:12.238+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:12.240+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:12.283+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:12.284+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:14.122+0000,502,3,Low,Wazuh server started.,wazuh01,000,Unknown,Unknown,None,wazuh-monitord
+2026-07-16T07:29:14.227+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:14.229+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:14.241+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:14.523+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:14.522+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:15.896+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:15.897+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:15.910+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:15.949+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:15.952+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:15.963+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:17.532+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:17.534+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:17.546+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:17.589+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:17.590+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:19.130+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:19.132+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:19.152+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:19.152+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:19.166+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:20.158+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:20.160+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:20.172+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:20.845+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:21.887+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,45.227.254.152,Administrator,T1531,EventChannel
+2026-07-16T07:29:21.888+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,88.214.25.125,Administrator,T1110,EventChannel
+2026-07-16T07:29:21.901+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.121,Administrator,T1531,EventChannel
+2026-07-16T07:29:21.914+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:21.916+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:21.929+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:23.820+0000,60122,5,Medium,Logon Failure - Unknown user or bad password,win11,002,88.214.25.125,Administrator,T1531,EventChannel
+2026-07-16T07:29:23.822+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,88.214.25.121,Administrator,T1110,EventChannel
+2026-07-16T07:29:24.012+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:25.333+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:25.334+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:25.335+0000,60104,5,Medium,Windows audit failure event,dc01,001,Unknown,Administrator,None,EventChannel
+2026-07-16T07:29:25.358+0000,60204,10,High,Multiple Windows Logon Failures,win11,002,45.227.254.152,Administrator,T1110,EventChannel
